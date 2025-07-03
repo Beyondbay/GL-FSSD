@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+</head>
+<body>
+    <style>
+    .category {
+      border: 3px solid black;
+      background-color: antiquewhite;
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+    }
+  </style>
+    <div class="category">
+        <a href="admin_page.html">Home</a>
+      <h1>Add Category</h1>
+      <hr>
+      <form action="POST">
+        <table>
+      <tr>
+        <td> <label for="categoryname">Category Name: </label> </td>
+        <td> <input type="text" id="categoryname" name="categoryname" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="description">Category Description: </label></td>
+        <td> <textarea name="description" id="description" name ="Description" rows="6" cols=""></textarea> </td>
+      </tr>
+
+      <tr>
+       <td><label for="status">Is Active</label></td>
+       <td><input type="checkbox" id="status" name="status"></td>
+      </tr>
+
+      <tr>
+       <td><label for="url">Category Url: </label></td>
+       <td><input type="text" id="url" name="url"></td>
+      </tr>
+
+      <tr>
+       <td><input type="reset" value="Discard"></td>
+       <td><input type="submit" value="Save"></td>
+      </tr>
+      </table>
+      </form>
+    </div>
+</body>
+</html>

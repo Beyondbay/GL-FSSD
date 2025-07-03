@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Food Item</title>
+</head>
+<body>
+    <style>
+    .cuisine {
+      border: 3px solid black;
+      background-color: antiquewhite;
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+    }
+  </style>
+    <div class="cuisine">
+              <a href="admin_page.html">Home</a>
+      <h1>Add Food Items</h1>
+      <hr>
+      <form action="POST">
+        <table>
+      <tr>
+        <td> <label for="foodname">FoodItem Name: </label> </td>
+        <td> <input type="text" id="foodname" name="foodname" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="description">FoodItem Description: </label></td>
+        <td> <textarea name="description" id="description" name ="Description" rows="6" cols=""></textarea> </td>
+      </tr>
+
+      <tr>
+       <td><label for="available">Available?</label></td>
+       <td><input type="checkbox" id="available" name="available"></td>
+      </tr>
+       
+      <tr>
+       <td><label for="vegeterian">Vegeterian?</label></td>
+       <td><input type="checkbox" id="vegeterian" name="Vegeterian"></td>
+      </tr>
+
+      <tr>
+        <td> <label for="categories">Category</label> </td>
+        <td><select name="categories" id="categories">
+            <option value="Pasta">Pasta</option>
+            <option value="Rice">Rice</option>
+            <option value="Noddles">Noddles</option>
+        </select></td>
+
+      </tr>
+
+      <tr>
+       <td><label for="url">Image Url: </label></td>
+       <td><input type="text" id="url" name="url"></td>
+      </tr>
+
+      <tr>
+       <td><input type="reset" value="Discard"></td>
+       <td><input type="submit" value="Save"></td>
+      </tr>
+      </table>
+      </form>
+    </div>
+</body>
+</html>
